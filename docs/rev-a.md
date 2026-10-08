@@ -22,7 +22,7 @@ Component BOM target: under JPY 10,000, excluding PCB fabrication, assembly, enc
 - mono line input
 - stereo output
 - microphone and line inputs available at the same time
-- codec powered from a separate low-noise 3.3 V rail
+- AP2112K-3.3 for the codec rail
 
 The microphone uses one ADC channel and the line input uses the other. The two DAC channels are used for the stereo output.
 
@@ -58,11 +58,14 @@ USB host power is switched under firmware control.
 
 ## Power
 
-- 1S LiPo, around 3000 to 4000 mAh
-- IP5306 I2C power management
-- physical power button connected to the PMIC
+- 1S 4.20 V LiPo, around 3000 to 4000 mAh
+- standard IP5306
+- physical power button connected to the IP5306
+- battery voltage measured by the ESP32-P4 ADC
 - switched 5 V rail for USB host
 - protected battery pack suitable for sale in Japan
+
+The standard IP5306 is used instead of the less common I2C variant.
 
 ## Firmware
 
