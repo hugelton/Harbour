@@ -1,0 +1,25 @@
+Block,Part,Qty,Notes
+Core,M5Stamp ESP32-P4,1,Main processor module
+Wireless,Stamp-AddOn C6 For P4,1,Wi-Fi module
+Audio,ES8388,1,2 ADC / 2 DAC codec
+Audio,AP2112K-3.3,1,Codec 3.3 V LDO
+Power,IP5306 4.20 V,1,Charger and 5 V boost
+Power,1 uH shielded inductor,1,IP5306 power inductor
+Power,SY6280,1,USB host VBUS switch
+Display,2.8 inch 320x240 SPI LCD,1,ILI9341 or ST7789 class
+Storage,microSD socket,1,SPI mode
+Panel,74HC165,5,40 switch inputs
+Panel,10 kOhm 8-way resistor network,5,74HC165 input pull-ups
+Panel,IS31FL3236A,1,36-channel LED driver
+Panel,Kailh Choc switch,16,Performance keys
+Panel,Page tact switch,12,
+Panel,Action tact switch,6,
+Panel,Push rotary encoder,6,
+USB,USB-C receptacle,1,Device and charging
+USB,USB-A receptacle,1,Host
+MIDI,TRS MIDI input jack,1,Type A
+MIDI,TRS MIDI output jack,1,Type A
+Audio,3.5 mm microphone jack,1,Mono
+Audio,3.5 mm line input jack,1,Mono
+Audio,3.5 mm stereo output jack,1,Stereo
+Battery,Protected 1S LiPo 3000-4000 mAh,1,Final pack TBD
