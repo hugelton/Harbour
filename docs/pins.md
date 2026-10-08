@@ -2,7 +2,7 @@
 
 Provisional pin assignment for the M5Stamp ESP32-P4.
 
-The assignment keeps the ESP32-P4 strapping pins free and keeps GPIO24/25 available for USB Serial/JTAG.
+GPIO34 to GPIO38 are left unused because they are strapping pins. GPIO24 and GPIO25 are kept for USB Serial/JTAG.
 
 ## Fixed interfaces
 
@@ -19,6 +19,8 @@ The assignment keeps the ESP32-P4 strapping pins free and keeps GPIO24/25 availa
 | C6 SDIO D2 | GPIO47 |
 | C6 SDIO D3 | GPIO48 |
 
+The C6 pins are on the Stamp-P4 BTB connector.
+
 ## System I2C
 
 | Function | Pin |
@@ -26,7 +28,7 @@ The assignment keeps the ESP32-P4 strapping pins free and keeps GPIO24/25 availa
 | SDA | GPIO9 |
 | SCL | GPIO10 |
 
-The bus is shared by the ES8388, IS31FL3236A and IP5306.
+The bus is shared by the ES8388 and IS31FL3236A.
 
 ## Audio
 
@@ -47,7 +49,7 @@ The bus is shared by the ES8388, IS31FL3236A and IP5306.
 
 ## Display and microSD
 
-SPI2 is shared by the display and microSD.
+SPI is shared by the display and microSD.
 
 | Function | Pin |
 | --- | --- |
@@ -58,7 +60,7 @@ SPI2 is shared by the display and microSD.
 | microSD CS | GPIO32 |
 | LCD D/C | GPIO33 |
 | LCD reset | GPIO39 |
-| LCD backlight PWM | GPIO40 |
+| LCD backlight PWM | GPIO49 |
 
 The LCD does not need MISO.
 
@@ -95,8 +97,9 @@ Encoder A/B signals are connected directly.
 | Function | Pin |
 | --- | --- |
 | USB host 5 V enable | GPIO41 |
+| Battery voltage sense | GPIO50 |
 
-The main power button is connected directly to the PMIC and is not a GPIO input.
+The main power button is connected directly to the IP5306 KEY pin.
 
 ## Reserved
 
@@ -104,6 +107,6 @@ The main power button is connected directly to the PMIC and is not a GPIO input.
 | --- | --- |
 | GPIO24, GPIO25 | USB Serial/JTAG |
 | GPIO34 - GPIO38 | ESP32-P4 strapping pins |
-| GPIO49, GPIO50, GPIO52 | spare |
+| GPIO52 | spare |
 
 This map is provisional until the first schematic is complete.
